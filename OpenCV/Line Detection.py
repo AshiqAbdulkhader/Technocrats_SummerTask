@@ -1,6 +1,6 @@
 import cv2                                                                   #import OpenCV
 import numpy as np                                                            #import numpy
-cap=cv2.VideoCapture(0)                                                       #capture video
+cap=cv2.VideoCapture(0)                                                       #capture video (change 0 to 1 if any other camera device is connected)
 while(True):                
     ret,frame=cap.read()                                                       #read frame
     gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)                             #convert to gray scale
